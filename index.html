@@ -18,6 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 <!-- /font files -->
 <!-- css files -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/jQuery.lightninBox.css" rel="stylesheet" type="text/css" media="all" />
@@ -139,28 +140,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="row">
 			<div class="col-lg-3 col-md-6 col-sm-6 about-w3ls1">
 				<div class="about-agile">
-					<i class="fa fa-music" aria-hidden="true"></i>
+					<i class="material-icons">find_replace</i>
 					<h4>Lorem ipsum dolor</h4>
 					<p class="about-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6 about-w3ls1">
 				<div class="about-agile">
-					<i class="fa fa-volume-up" aria-hidden="true"></i>
+					<i class="material-icons">3d_rotation</i>
 					<h4>consectetur adipiscing</h4>
 					<p class="about-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6 about-w3ls1">
 				<div class="about-agile">
-					<i class="fa fa-headphones" aria-hidden="true"></i>
+					<i class="material-icons">rss_feed</i>
 					<h4>facilisis ultricies</h4>
 					<p class="about-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6 about-w3ls1">
 				<div class="about-agile">
-					<i class="fa fa-play" aria-hidden="true"></i>
+					<i class="material-icons">reply_all</i>
 					<h4>Ut pharetra felis</h4>
 					<p class="about-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 				</div>
@@ -179,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-3 col-md-3 info-w3ls">
 				<div class="info-agile">
 					<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
-						<i class='hi-icon fa fa-desktop'><a href="#"></a></i>
+						<i class="material-icons">money_off</i>
 					</div>
 					<h4>Curabitur id purus</h4>
 					<p class="info-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -189,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-3 col-md-3 info-w3ls">
 				<div class="info-agile">
 					<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
-						<i class='hi-icon fa fa-cog'><a href="#"></a></i>
+						<i class="material-icons">multiline_chart</i>
 					</div>
 					<h4>porttitor risus feugiat</h4>
 					<p class="info-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -199,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-3 col-md-3 info-w3ls">
 				<div class="info-agile">
 					<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
-						<i class='hi-icon fa fa-compass'><a href="#"></a></i>
+						<i class="material-icons">settings_input_antenna</i>
 					</div>
 					<h4>Cras volutpat arcu</h4>
 					<p class="info-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -209,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-lg-3 col-md-3 info-w3ls">
 				<div class="info-agile">
 					<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
-						<i class='hi-icon fa fa-user'><a href="#"></a></i>
+						<i class="material-icons">camera</i>
 					</div>
 					<h4>nec augue blandit</h4>
 					<p class="info-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -667,28 +668,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- /work section -->
 <!-- map section -->
 <div class="map">
-	<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120" style="border:0" allowfullscreen></iframe>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	<div style='overflow:hidden;height:500px;width:100%;'>
+		<div id='gmap_canvas' style='height:500px;width:100%;'></div>
+		<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+	</div>
+	<script type='text/javascript'>
+		function init_map(){
+			var myOptions = {zoom:10,center:new google.maps.LatLng(18.528974,73.8564652),mapTypeId: google.maps.MapTypeId.ROADMAP};
+			map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+			marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(18.528974,73.8564652)});
+			infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>COEP pune<br>'});
+			google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+			infowindow.open(map,marker);
+		}
+		google.maps.event.addDomListener(window, 'load', init_map);
+	</script>
 </div>
 <!-- /map section -->
 <!-- subscribe section -->
 <section class="subs">
-	<div class="container">
-		<div class="col-lg-6">
-			<h3>Make Yourself Available, Subscribe To Us</h3>
+	<div class="container" style="margin-left: 10%;">
+		<div class="col-lg-6" style="width: 75%">
+			<h3>Thanks for your keen interest in BEC and desire to be associated. Will you be</h3>
+			<h3>kind enough to fill in the google form in the link below, which will not take more</h3>
+			<h3>than 90 seconds to fill.</h3>
 		</div>
-		<div class="col-lg-6">
-			<div class="subscribe">
-				<form action="#" method="post">
-					<div class="form-group1">
-						<input class="form-control" id="email" name="email" placeholder="myemail@example.com" type="email" required>
-					</div>
-					<div class="form-group2">
-						<button class="btn btn-outline btn-lg" type="submit">Subscribe</button>
-					</div>
-					<div class="clear-fix"></div>
-				</form>
-			</div>	
-		</div>
+		<div class="subscribe" style="padding-top: 6%;">
+			<form action="#" method="post">
+					<button class="btn btn-outline btn-lg" type="submit">Proceed</button>
+			</form>
+		</div>	
 	</div>
 </section>
 <!-- /subscribe section -->
@@ -696,7 +706,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <section class="footer" id="contact">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-4 footer-agile">
+			<div class="col-lg-4 col-md-4 footer-agile" style="margin-left: 2%">
 				<h3>About Us</h3>
 				<p class="footer-p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 				<ul class="social-icons3">
@@ -707,12 +717,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				</ul>	
 			</div>
-			<div class="col-lg-4 col-md-4 footer-agile">
-				<h3>Customer Feed</h3>
-				<p class="footer-p2">" Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit leo, congue ut rhoncus id, egestas id diam. Suspendisse non lectus id lorem ornare molestie nec in felis. "</p>
-				<p class="footer-p3"><a href="#">#John Doe</a>, <span>5 Hours ago</span></p>
-			</div>
-			<div class="col-lg-4 col-md-4 footer-agile">
+			<div class="col-lg-4 col-md-4 footer-agile" style="margin-left: 31%;">
 				<h3>Our Links</h3>
 				<div class="contact-w3ls">
 					<div class="row">	
@@ -722,7 +727,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-8 contact-agile2">
 							<div class="address">
 								<h4>Visit Us</h4>
-								<p>Jack street,Chicago,USA.</p>
+								<p>Wellesley Road, Shivajinagar,</p>
+								<p>Pune, Maharashtra 411005</p>
 							</div>	
 						</div>	
 					</div>
@@ -733,7 +739,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-8 contact-agile2">
 							<div class="address">
 								<h4>Mail Us</h4>
-								<p><a href="mailto:email@example.com">email@example.com</a></p>
+								<p><a href="mailto:email@example.com">bec@coep.ac.in</a></p>
 							</div>	
 						</div>
 					</div>
@@ -744,18 +750,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-xs-8 contact-agile2">
 							<div class="address">
 								<h4>Call Us</h4>
-								<p>+01 0101 01010101</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4 contact-agile1">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-						</div>
-						<div class="col-xs-8 contact-agile2">
-							<div class="address">
-								<h4>Our Working Hours</h4>
-								<p>Monday - Friday : 08 AM - 07 PM</p>
+								<p>Ujjwal Garg:</p>
+								<p style="padding-bottom:7%;">+91 9022746322</p>
+								<p>Soumyaditya Kar:</p>
+								<p>+91 7066223362</p>
 							</div>
 						</div>
 					</div>
@@ -763,7 +761,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>	
 		<hr>
-		<p class="copyright">&copy; 2016 Euphony. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+		<p class="copyright">&copy; 2016 BEC. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">Diptanshu Agrawal & Shadab Khan</a></p>
 	</div>
 </section>
 <!-- /footer section -->

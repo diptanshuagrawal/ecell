@@ -4,10 +4,15 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /*-- reset code --*/
+.material-icons {
+	font-size: 72px;
+	color: white;
+	display: inline;
+}
 body{
 	padding:0;
 	margin:0;
-	background:#FFF;
+	background: #F5F5F5;
 }
 body a{
     transition:0.5s all;
@@ -369,7 +374,7 @@ section.about p.text-center {
 section.about .about-agile {
     text-align: center;
 	padding:35px 10px;
-	background-color:#e92381;
+	background-color:#FF6600;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 	-moz-transition:all 0.5s ease-in-out;
@@ -377,7 +382,7 @@ section.about .about-agile {
 	-ms-transition:all 0.5s ease-in-out;
 }
 section.about .about-agile:hover {
-	background-color:#003466;
+	background-color:#990099;
 }
 section.about .about-agile:hover i.fa {
     -webkit-animation: spin 2s linear infinite;
@@ -489,8 +494,8 @@ section.info p.info-p1 {
 	-o-transition:all 0.5s ease-in-out;
 	-ms-transition:all 0.5s ease-in-out;
 }
-.info-agile:hover .hi-icon {
-	background:#ff9900;	
+.info-agile:hover .material-icons {
+	background:#000000;	
     color: #ffffff;
 }
 .info-agile:hover .hi-icon:after {
@@ -747,7 +752,8 @@ section.team h4 {
 /*-- testimonial section --*/
 section.testimonial {
 	padding:100px 0;
-	background-color:#e92381;
+	background-color: #159957;
+	background-image: linear-gradient(90deg, #155799, #159957);
 	text-align: -webkit-center;
 }
 section.testimonial h3.text-center {
@@ -1141,59 +1147,28 @@ section.work img {
 /*-- /map section --*/
 /*-- subscribe section --*/
 section.subs {
-	background-color:#131313;
-	padding: 40px 0 50px;
+	background-color:#303841;
+	padding: 1% 0 2%;
 }
 section.subs h3 {
-    font-size: 25px;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: #ffffff;
-	padding-top:10px;
-	font-family: 'Raleway', sans-serif;
-}
-section.subs .subscribe input#email {
-	float: left;
-    text-align: center;
-    width: 65%;
+    width: 100%;
     font-size: 17px;
-    font-weight: normal;
-    height: 50px;
-    outline: none;
-    border: none;
-    color: #fff;
-	font-family: 'Raleway', sans-serif;
-    background-color:#313030;
-    border-radius: 5px 0px 0px 5px;
-    -webkit-border-radius: 5px 0px 0px 5px;
-    -moz-border-radius: 5px 0px 0px 5px;
-    -o-border-radius: 5px 0px 0px 5px;
-    -ms-border-radius: 5px 0px 0px 5px;
-    box-shadow: 4px 4px 0px #242424;
-	transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-o-transition:all 0.3s ease-in-out;
-	-ms-transition:all 0.3s ease-in-out;
+    font-weight: 500;
+    color: #ffffff;
+	padding-top: 3%;
+	font-family: sans serif;
+	text-align: center;
 }
-section.subs .subscribe input#email:hover, 
-section.subs .subscribe input#email:focus {
-	border-radius: 5px 6px 6px 5px;
-    -webkit-border-radius: 5px 6px 6px 5px;
-    -moz-border-radius: 5px 6px 6px 5px;
-    -o-border-radius: 5px 6px 6px 5px;
-    -ms-border-radius: 5px 6px 6px 5px;
-} 
 section.subs .subscribe button.btn.btn-outline.btn-lg {
 	float: right;
-    width: 35%;
-    height: 50px;
+    width: 15%;
+    height: 5%;
     font-size: 20px;
     font-weight: normal;
-    outline: none;
+   outline: none;
     color: #fff;
 	font-family: 'Raleway', sans-serif;
-    background-color: #f36523;
+    background-color: #CA2E15;
 	box-shadow: 4px 4px 0px #CA2E15;
     border-radius:0 5px 5px 0;
 	-webkit-border-radius:0 5px 5px 0;
@@ -1225,14 +1200,15 @@ color: #fff !important;
 /*-- /subscribe section --*/
 /*-- footer section --*/
 section.footer {
-	padding:100px 0;
-	background:#000;
+	padding:50px 0;
+	background:#fff;
 }
 section.footer h3 {
-	color:#fff;
-	font-size:21px;
+	color:#000;
+	font-size:17px;
 	font-weight:500;
-	padding-bottom:50px;
+	padding-bottom:30px;
+	text-transform: uppercase;
 	position:relative;
 	letter-spacing:0.5px;
 }
@@ -1240,7 +1216,7 @@ section.footer h3:after {
 	content: '';
     height: 3px;
     width: 65px;
-    background-color: #f36523;
+    background-color: #17B794;
     display: block;
     position: absolute;
     bottom: 22px;
@@ -1250,7 +1226,7 @@ p.footer-p1 {
     font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 30px;
-    color: #fff;
+    color: #000;
 }
 ul.social-icons3 {
     padding-top: 20px;
@@ -1261,79 +1237,59 @@ ul.social-icons3 li {
 	margin-right:42px;
 }
 ul.social-icons3 li a i.fa {
-	color:#f36621;
+	color:#17B794;
 	font-size:25px;
 }
 ul.social-icons3 li a i.fa:hover {
 	color:#CA2E15;
-}
-p.footer-p2 {
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 30px;
-}
-p.footer-p3 {
-	color: #fff;
-    letter-spacing: 0.5px;
-    font-size: 17px;
-    padding-top: 17px;
-}
-p.footer-p3 a {
-	color:#fff;
-	text-decoration: underline;
-}
-p.footer-p3  span {
-	font-weight:600;
 }
 section.footer .contact-w3ls .row {
 	padding-bottom:30px;
 	text-align:center;
 }
 section.footer .contact-w3ls i.fa {
-    color:#fff;
+    color:#000;
     vertical-align: middle;
     text-align: center;
 	margin-left:-65px;
 }
 section.footer .contact-w3ls i.fa.fa-map-marker {
 	font-weight:normal;
-	font-size:40px;	
-	line-height:55px;
+	font-size:30px;	
+	color: #17B794;
 }
 section.footer .contact-w3ls i.fa.fa-envelope-o {
 	font-weight:normal;
 	font-size:30px;
-	line-height:55px;	
+	color: #17B794;
 }
 section.footer .contact-w3ls i.fa.fa-mobile {
 	font-weight:normal;
-	font-size:55px;
-	line-height:55px;	
+	font-size:30px;
+	color: #17B794;
 }
 section.footer .contact-w3ls i.fa.fa-clock-o {
 	font-weight:normal;
-	font-size:40px;
-	line-height:55px;	
+	font-size:30px;
 }
 section.footer .contact-w3ls .address {
 	text-align:justify;
 	margin-left:-65px;
 }
 section.footer .contact-w3ls h4 {
-	color:#fff;
+	color:#000;
 	font-size:17px;
 	font-weight:normal;
 	padding-bottom:20px;
 	text-transform:uppercase;
 }
 section.footer .contact-w3ls p {
-	color:#fff;
+	color:#17B794;
 	font-size:15px;
 	font-weight:normal;
 }
 section.footer .contact-w3ls p a {
-	color:#fff;
+	color:#17B794;
 }	
 section.footer .contact-w3ls p a:hover {
 	color:#1d76f6;
@@ -1342,17 +1298,16 @@ section.footer .contact-w3ls p a:hover {
     text-align:center;
 }
 p.copyright {
-    color: #fff;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.5px;
 }
 p.copyright a {
-	color:#fff;
+	color:#17B794;
 }
 p.copyright a:hover {
-	color:#f36621;
+	color:#17B794;
 } 
 /*-- /footer section --*/
 /*-- back to top --*/
@@ -1484,9 +1439,6 @@ section.testimonial p.test-p1 {
 }
 p.footer-p1 {
     font-size: 14px;
-}
-p.footer-p2 {
-	font-size:14px;
 }
 section.footer .contact-w3ls p {
 	font-size:14px;
@@ -1680,9 +1632,6 @@ section.footer {
 section.footer h3:after {
 	left:326px;
 }
-.col-lg-4.col-md-4.footer-agile {
-    padding-bottom: 40px;
-}
 section.footer .contact-w3ls i.fa {
 	margin-left:130px;
 }
@@ -1693,7 +1642,7 @@ section.footer .contact-w3ls i.fa {
 }
 .col-xs-8.contact-agile2 {
     float: left;
-    width: 50%;
+    width: 70%;
 }
 section.footer .contact-w3ls .address {
     margin-left: -60px;
@@ -1746,7 +1695,7 @@ section.work i.fa.fa-search-plus {
 	padding:0 20px;
 }
 section.subs h3 {
-	padding-bottom:30px;
+	padding-bottom: 0px;
 }
 section.footer .contact-w3ls i.fa {
     margin-left: 170px;
@@ -1861,10 +1810,7 @@ section.work i.fa.fa-search-plus {
     height: 250px;
 }
 section.subs h3 {
-    font-size: 17px;
-}
-section.subs .subscribe input#email {
-	font-size:15px;
+    font-size: 3px;
 }
 section.subs .subscribe button.btn.btn-outline.btn-lg {
 	font-size:16px;
@@ -1884,10 +1830,9 @@ section.footer .contact-w3ls i.fa {
 .col-lg-3.col-md-3.col-sm-6.team-w3ls:nth-child(3) .team-agileits,.col-lg-3.col-md-3.col-sm-6.team-w3ls:nth-child(4) .team-agileits {
 	margin-bottom:0;
 }
-.col-lg-4.col-md-4.footer-agile:nth-child(3) {
+.col-lg-4.col-md-4.footer-agile {
 	padding-bottom:0;
 } 
-}
 
 @media (max-width: 600px) {
 .view .mask, .view .content {
@@ -2106,7 +2051,7 @@ section.footer .contact-w3ls i.fa {
 section.footer .contact-w3ls .address {
     margin-left: -65px;
 }
-}
+
 
 @media (max-width:320px) {
 #slider_full_items p span {
@@ -2153,16 +2098,6 @@ section.work i.fa.fa-search-plus {
 section.subs h3 {
     font-size: 14px;
     line-height: 25px;
-}
-section.subs .subscribe input#email {
-	width:100%;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	-o-border-radius:5px;
-	-ms-border-radius:5px;
-	margin-bottom:15px;
-	height:45px;
 }
 section.subs .subscribe button.btn.btn-outline.btn-lg {
 	width:100%;
