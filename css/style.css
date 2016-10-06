@@ -132,7 +132,6 @@ section.banner .container-fluid {
 	font-size:35px;
 	font-weight:normal;
 	color:#fff;
-	text-transform:uppercase;
 	font-family: 'Raleway', sans-serif;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -349,16 +348,15 @@ section.about {
 }
 section.about h2.text-center {
 	font-size:40px;
-	font-weight:700;
+!	font-weight:700;
 	padding-bottom:50px;
 	position:relative;
-	font-family: 'Raleway', sans-serif;
-	text-transform:uppercase;
+	font-family: 'Calibri', sans-serif;
 	color:#000;
 }
 section.about h2.text-center:after {
 	content: '';
-    background-color:#e92381;
+    background-color:#17B794;
     width: 14%;
     height:5px;
     display: block;
@@ -374,7 +372,7 @@ section.about p.text-center {
 section.about .about-agile {
     text-align: center;
 	padding:35px 10px;
-	background-color:#FF6600;
+	background-color:#17B794;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 	-moz-transition:all 0.5s ease-in-out;
@@ -382,7 +380,7 @@ section.about .about-agile {
 	-ms-transition:all 0.5s ease-in-out;
 }
 section.about .about-agile:hover {
-	background-color:#990099;
+	background-color: #138d75 ;
 }
 section.about .about-agile:hover i.fa {
     -webkit-animation: spin 2s linear infinite;
@@ -436,7 +434,7 @@ section.about p.about-p1 {
 /*-- info section --*/
 section.info {
 	padding:100px 0;
-	background:url(../images/info.jpg);
+	background:#0D1D31;
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:100% 100%;
@@ -447,7 +445,7 @@ section.info {
 }
 section.info h3.text-center {
 	font-size:40px;
-	font-weight:700;
+	 
 	padding-bottom:50px;
 	position:relative;
 	font-family: 'Raleway', sans-serif;
@@ -456,7 +454,7 @@ section.info h3.text-center {
 }
 section.info h3.text-center:after {
 	content: '';
-    background-color:#ff9900;	
+    background-color:#fff;	
     width: 14%;
     height:5px;
     display: block;
@@ -507,14 +505,14 @@ section.info p.info-p1 {
 }
 .col-lg-3.col-md-3.info-w3ls span.line1 {
 	width: 1px;
-    background-color:#ff9900;	
+    background-color:#fff;	
     height: 105%;
     position: absolute;
     right: 0px;
     top: -16px;
 }
 section.info hr {
-	border-top:1px solid #ff9900;	
+	border-top:1px solid #fff;	
 }
 .hi-icon a {
 	display:block; 
@@ -608,11 +606,9 @@ section.team {
 }
 section.team h3.text-center {
 	font-size:40px;
-	font-weight:700;
 	padding-bottom:25px;
 	position:relative;
 	font-family: 'Raleway', sans-serif;
-	text-transform:uppercase;
 	color:#000;
 }
 section.team p.text-center:before {
